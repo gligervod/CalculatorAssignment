@@ -10,7 +10,9 @@
         android:id="@+id/multiplyButton"
         android:layout_width="40dp"
         android:layout_height="45dp"
+        android:layout_marginStart="10dp"
         android:backgroundTint="@color/hot"
+        android:onClick="findmult"
         android:text="×"
         app:iconTintMode="src_over"
         app:layout_constraintStart_toEndOf="@+id/subtractButton"
@@ -22,7 +24,9 @@
         android:id="@+id/divideButton"
         android:layout_width="40dp"
         android:layout_height="45dp"
+        android:layout_marginStart="10dp"
         android:backgroundTint="@color/hot"
+        android:onClick="findDiv"
         android:text="÷"
         app:iconTintMode="src_over"
         app:layout_constraintStart_toEndOf="@+id/multiplyButton"
@@ -34,6 +38,7 @@
         android:id="@+id/subtractButton"
         android:layout_width="40dp"
         android:layout_height="45dp"
+        android:layout_marginStart="10dp"
         android:backgroundTint="@color/hot"
         android:onClick="findDif"
         android:text="-"
@@ -52,7 +57,6 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/num2ET"
-        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2"
@@ -70,31 +74,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/num1ET"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.20"
+        app:layout_constraintVertical_bias="0.2"
         tools:visibility="visible" />
 
     <TextView
         android:id="@+id/resultTV"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/num2ET"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199" />
+        app:layout_constraintVertical_bias="0.215" />
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="40dp"
         android:layout_height="45dp"
+        android:layout_marginStart="32dp"
         android:backgroundTint="@color/hot"
         android:onClick="findSum"
         android:text="+"
         app:iconTintMode="src_over"
+        app:layout_constraintEnd_toStartOf="@+id/subtractButton"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num1ET"
         app:rippleColor="@color/dark_hot"
         app:strokeColor="@color/dark_hot" />
+
+    <TextView
+        android:id="@+id/operationTV"
+        android:layout_width="24dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/divideButton"
+        app:layout_constraintEnd_toStartOf="@+id/num2ET"
+        app:layout_constraintStart_toEndOf="@+id/num1ET"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
