@@ -84,13 +84,14 @@
         android:id="@+id/resultTV"
         android:layout_width="145dp"
         android:layout_height="37dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/num2ET"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <Button
         android:id="@+id/addButton"
@@ -113,12 +114,13 @@
         android:id="@+id/operationTV"
         android:layout_width="24dp"
         android:layout_height="21dp"
+        android:layout_marginTop="5dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toTopOf="@+id/divideButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/num2ET"
         app:layout_constraintStart_toEndOf="@+id/num1ET"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintVertical_bias="0.20" />
 
     <Switch
         android:id="@+id/IntDivSwitch"
